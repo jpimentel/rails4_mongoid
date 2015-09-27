@@ -13,10 +13,11 @@ myApp.factory('Post', ['$resource', function($resource){
 myApp.controller("PostListCtrl", ['$scope', '$resource', 'Posts', 'Post', '$location', function($scope, $resource, Posts, Post, $location) {
     $scope.posts = Posts.query();
 
-    $scope.deletePost = function (postId) {
+    $scope.deletePost = function (post) {
         if (confirm("Are you sure you want to delete this post?")){
-            Post.delete({ id: postId }, function(){
-                $scope.posts = Posts.query();
+            Post.delete({ id: post.id }, function(){
+                var postIndex = $scope.posts.indexOf(post);
+                $scope.posts.splice(postIndex);
             });
         }
     };

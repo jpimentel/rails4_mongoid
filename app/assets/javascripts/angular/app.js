@@ -1,4 +1,4 @@
-var myApp = angular.module('myApp', ['ngResource']);
+var myApp = angular.module('myApp', ['ngResource', 'ui.bootstrap']);
 
 myApp.config([
     '$httpProvider', function($httpProvider) {
