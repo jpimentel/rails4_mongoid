@@ -9,4 +9,7 @@ class User
 
   index({ username: 1 } , { unique: true })
 
+  def comments
+    
+  end
 end

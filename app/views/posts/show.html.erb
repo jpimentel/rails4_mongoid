@@ -15,5 +15,12 @@
   <%= @post.starred %>
 </p>
 
+<% if @post.user %>
+<p>
+  <strong>User:</strong>
+  <%= link_to @post.user.username, @post.user %>
+</p>
+<% end %>
+
 <%= link_to 'Edit', edit_post_path(@post) %> |
 <%= link_to 'Back', posts_path %>

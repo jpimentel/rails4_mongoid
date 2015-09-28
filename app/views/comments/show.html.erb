@@ -5,5 +5,11 @@
   <%= @comment.body %>
 </p>
 
+<% if @comment.user %>
+<p>
+  <strong>User:</strong>
+  <%= link_to @comment.user.username, @comment.user %>
+</p>
+<% end %>
 <%= link_to 'Edit', edit_post_comment_path(@post, @comment) %> |
 <%= link_to 'Back', post_comments_path(@post) %>
