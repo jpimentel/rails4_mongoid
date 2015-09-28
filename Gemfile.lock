@@ -39,6 +39,7 @@ GEM
     angularjs-rails (1.4.4)
     arel (4.0.0)
     atomic (1.1.9)
+    bootstrap_form (2.3.0)
     bson (1.8.6)
     bson_ext (1.8.6)
       bson (~> 1.8.6)
@@ -129,6 +130,7 @@ PLATFORMS
 DEPENDENCIES
   angular-ui-bootstrap-rails
   angularjs-rails
+  bootstrap_form
   bson_ext (~> 1.8.6)
   coffee-rails (~> 4.0.0)
   haml

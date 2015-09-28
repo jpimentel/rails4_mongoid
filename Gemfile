@@ -38,6 +38,8 @@ gem 'haml'
 gem 'angularjs-rails'
 gem 'angular-ui-bootstrap-rails' #for bootstrap UI
 
+# bootstrap form
+gem 'bootstrap_form'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
