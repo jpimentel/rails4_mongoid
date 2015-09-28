@@ -1,5 +1,8 @@
 Rails4Mongoid::Application.routes.draw do
 
+  resources :users do
+  end
+
   resources :posts do
     resources :comments
   end
